@@ -900,6 +900,17 @@ petelepage:
   lanyrd: petele
   description:
     en: Pete is a Developer Advocate
+ 
+kennith:
+  name:
+    given: Kennith
+    family: Leung
+  homepage: http://kennithleung.com
+  twitter: kennith
+  google: +kennith
+  email: kennith.leung@gmail.com
+  role: 
+    - translator
 
 paullewis:
   name:
@@ -922,8 +933,8 @@ henrylim:
     given: Henry
     family: Lim
   org:
-    name: Independent
-    unit: Developer
+    name: Google Developer Group Kuala Lumpur
+    unit: Community Co-organizer
   country: MY
   role:
     - translator
@@ -932,7 +943,7 @@ henrylim:
   homepage: 'https://limhenry.xyz'
   email: lets.email.henry@gmail.com
   description:
-    en: 'Co-Organizer @ GDG Kuala Lumpur'
+    en: 'Henry is the community co-organizer @ Google Developer Group Kuala Lumpur.'
 
 wayouliu:
   name:

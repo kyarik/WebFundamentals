@@ -1,11 +1,12 @@
-'use strict';
-
-/*
-    wfContributors.js
-    Reads the _contributors.yaml file and uses Handlebars to generate the
-    primary contributors file and the individual include files. It also takes
-    care of generating individual contributions pages.
+/**
+ * @fileoverview Reads the _contributors.yaml file and uses Handlebars to
+ *  generate the primary contributors file and the individual include files.
+ *  It also takes care of generating individual contributions pages.
+ *
+ * @author Pete LePage <petele@google.com>
  */
+
+'use strict';
 
 var fs = require('fs-extra');
 var path = require('path');
@@ -66,7 +67,7 @@ function buildIndex(contributors) {
 
 function buildIndividualPages(contributors) {
   gutil.log(' ', 'Building individual pages of all contributors...');
-  var files = wfHelper.getFileList(GLOBAL.WF.src.content, ['**/*.md']);
+  var files = wfHelper.getFileList(global.WF.src.content, ['**/*.md']);
   var filesByAuthor = wfHelper.splitByAuthor(files);
 
   var keys = Object.keys(contributors);
