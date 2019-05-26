@@ -62,8 +62,8 @@ for (const match of matches) {
 ```
 
 There are a few things to note about this. Unlike `match()` which returns an
-array on a global search, `matchAll()` returns an iterable object that works
-beautifully with `for...of` loops. The iterable object produces an array for
+array on a global search, `matchAll()` returns an iterator that works
+beautifully with `for...of` loops. The iterator produces an array for
 each match, including the capturing groups with a few extras. If you print
 these to the console they'll look like this:
 
@@ -73,7 +73,7 @@ these to the console they'll look like this:
 ```
 
 You may notice that the value for each match is an array in exactly the same
-format returned by `match()` for non-global regular expressions.
+format as returned by `match()` for non-global regular expressions.
 
 ## Bonus material
 
